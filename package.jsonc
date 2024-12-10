@@ -1,0 +1,33 @@
+{
+    "name": "mesto",
+    "description": "Project \"Mesto\" in RTU MIREA.",
+    "version": "1.0.0",
+    "author": "<emchernetsov@gmail.com>",
+    "license": "MIT",
+
+    // Информация о репозитории
+    "repository": {
+        // Тип системы управления версиями (здесь git)
+        "type": "git",
+        // URL-адрес репозитория, куда загружается проект
+        "url": "git+https://github.com/EugenDOS/YA-frontend-courses-special-6th-project.git"
+    },
+
+    // Раздел со скриптами, которые можно выполнять через npm
+    "scripts": {
+        // Скрипт для сборки проекта. Удаляет папку dist и запускает webpack в режиме production.
+        "build": "rimraf dist && webpack --mode production",
+
+        // Скрипт для разработки. Запускает webpack-dev-server, чтобы отобразить изменения в реальном времени.
+        "dev": "webpack serve",
+
+        // Скрипт для очистки. Удаляет папку dist (где обычно находятся собранные файлы).
+        "clean": "rimraf dist",
+
+        // Скрипт, выполняемый перед деплоем (автоматически запускает `build`).
+        "predeploy": "npm run build",
+
+        // Скрипт для деплоя. Публикует содержимое папки dist на GitHub Pages.
+        "deploy": "gh-pages -d dist"
+    }
+}

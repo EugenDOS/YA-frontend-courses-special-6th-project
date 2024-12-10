@@ -11,14 +11,14 @@ export const apiSettings = {
 
 /**
  * Настройки валидации
- * @param {string} formSelector - класс формы
- * @param {string} inputSelector - класс инпута
+ * @param {string} formSelector         - класс формы
+ * @param {string} inputSelector        - класс инпута
  * @param {string} submitButtonSelector - класс кнопки отправки формы
- * @param {string} inactiveButtonClass - класс, к-рый делает кнопку отправки формы заблокированной
- * @param {string} inputErrorClass - класс, подсвечивающий поле с ошибками
- * @param {string} errorClass - класс, делающий ошибку видимой
+ * @param {string} inactiveButtonClass  - класс, к-рый делает кнопку отправки формы заблокированной
+ * @param {string} inputErrorClass      - класс, подсвечивающий поле с ошибками
+ * @param {string} errorClass           - класс, делающий ошибку видимой
+ * @type {Object}
  */
-/** @type {Object} */
 export const validationSettings = {
   formSelector: '.popup__form',
   inputSelector: '.popup__input',

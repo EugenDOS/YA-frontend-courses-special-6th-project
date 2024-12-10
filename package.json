@@ -1,8 +1,8 @@
 {
   "name": "mesto",
-  "description": "My project in RTU MIREA.",
+  "description": "Project \"Mesto\" in RTU MIREA.",
   "version": "1.0.0",
-  "author": " <emchernetsov@gmail.com>",
+  "author": "<emchernetsov@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
